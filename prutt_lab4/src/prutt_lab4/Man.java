@@ -9,4 +9,6 @@ public class Man extends Human {
 	public static Man createMan(String name, String sex){
 		return new Man(name,sex);
 	}
+	
+	
 }
