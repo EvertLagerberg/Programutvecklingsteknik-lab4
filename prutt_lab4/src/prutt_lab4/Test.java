@@ -26,8 +26,15 @@ public class Test {
 	
 	
 	System.out.println(resväska.toString());
+	
 	System.out.println("Total:" + resväska.getWeight());
 	
+	System.out.println("Påse:" + påse.getWeight());
+	
+	 Human anna = Human.create("Anna", "xxxxxx-012x");
+	    Human magnus = Human.create("Magnus","xxxxxx-011x");
+	    System.out.println(anna);
+	    System.out.println(magnus);
 
 	}
 
