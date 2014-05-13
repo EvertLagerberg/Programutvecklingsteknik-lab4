@@ -1,6 +1,13 @@
 package prutt_lab4;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 public class Test {
+	
+	private static final int  = 0;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,10 +39,16 @@ public class Test {
 	System.out.println("Påse:" + påse.getWeight());
 	
 	 Human anna = Human.create("Anna", "xxxxxx-012x");
-	    Human magnus = Human.create("Magnus","xxxxxx-011x");
-	    System.out.println(anna);
-	    System.out.println(magnus);
-
+	 Human magnus = Human.create("Magnus","xxxxxx-011x");
+	 Human Tommy = Human.create("Tommy", "890403-0650");
+	
+	 System.out.println(anna);
+	 System.out.println(magnus);
+	 System.out.println(Tommy);
+	 
+	 Iterator packet = (Iterator) påse.itr;
+	 System.out.println(packet.hasNext());
+	 
 	}
 
 }

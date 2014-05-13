@@ -1,6 +1,8 @@
 package prutt_lab4;
 
-abstract class Component {
+import java.util.Iterator;
+
+abstract class Component implements Iterator<Component>  {
 
 	public String name;
 	public float weight;
