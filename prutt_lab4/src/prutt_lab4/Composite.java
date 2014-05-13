@@ -20,17 +20,13 @@ public class Composite extends Component implements Iterable<Component> {
 	public void add(Component c) {
 		c.setParent(this);
 		list.add(c);
-
 	}
 
 	public void remove() {
-
 	}
-
-	public void getChild() {
-		for(Component c : list){
-			queue.add(c);
-		}
+	
+	public LinkedList<Component> getChildren() {
+		return list;
 	}
 
 	// getWeight()
@@ -60,24 +56,9 @@ public class Composite extends Component implements Iterable<Component> {
 		return s;
 	}
 
-	@Override
-
-	public boolean hasNext() {
-		return(position < list.size());
-	}
-
-	@Override
-	public Component next() {
-		Component c =list.get(position);
-		System.out.println("-------->");
-		position ++;
-		return c;
-	}
-
-	@Override
 	public Iterator<Component> iterator() {
-
-		return list.iterator();
+		return new Iterator_ver(list);
+		//return new Iterator_hor(list);
 	}
 
 

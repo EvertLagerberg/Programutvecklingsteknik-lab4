@@ -48,15 +48,9 @@ public class Test {
 	 System.out.println(magnus);
 	 System.out.println(Tommy);
 	 
-	 Iterator<Component> packet = (Iterator<Component>) resväska.iterator();
-	 
-
-	 
+	 Iterator<Component> packet =  resväska.iterator();
 	 while(packet.hasNext()){
-		 System.out.println(packet.next());
+		 System.out.println(packet.next().name);
 	 }
-	 
-
 	}
-
 }

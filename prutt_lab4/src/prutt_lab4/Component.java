@@ -1,9 +1,10 @@
 package prutt_lab4;
 
 import java.util.Iterator;
+import java.util.LinkedList;
 
 
-abstract class Component implements Iterator<Component>  {
+abstract class Component  {
 
 
 	public String name;
@@ -32,6 +33,11 @@ abstract class Component implements Iterator<Component>  {
 
 	public Component getParent() {
 		return parent;
+	}
+	
+	public LinkedList<Component> getChildren(){
+		
+		return null;
 	}
 
 	// end of class
