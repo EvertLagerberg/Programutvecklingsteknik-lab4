@@ -3,6 +3,7 @@ package prutt_lab4;
 
 abstract class Human {
 	
+	
 	public String name;
 	public String sex;
 	String pnr;

@@ -1,14 +1,11 @@
 package prutt_lab4;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
+import java.util.Iterator;
+
 
 public class Test {
 	
-	private static final int  = 0;
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
@@ -31,13 +28,18 @@ public class Test {
 	påse.add(tvål);
 	påse.add(schampoo);
 	
+	/*while (itr.hasNext()) {
+		Component c = itr.next();
+		System.out.println(c);
+	}*/
 	
-	System.out.println(resväska.toString());
+	
+	/*System.out.println(resväska.toString());
 	
 	System.out.println("Total:" + resväska.getWeight());
 	
-	System.out.println("Påse:" + påse.getWeight());
-	
+	System.out.println("Påse:" + påse.getWeight());*/
+
 	 Human anna = Human.create("Anna", "xxxxxx-012x");
 	 Human magnus = Human.create("Magnus","xxxxxx-011x");
 	 Human Tommy = Human.create("Tommy", "890403-0650");
@@ -46,9 +48,15 @@ public class Test {
 	 System.out.println(magnus);
 	 System.out.println(Tommy);
 	 
-	 Iterator packet = (Iterator) påse.itr;
-	 System.out.println(packet.hasNext());
+	 Iterator<Component> packet = (Iterator<Component>) resväska.iterator();
 	 
+
+	 
+	 while(packet.hasNext()){
+		 System.out.println(packet.next());
+	 }
+	 
+
 	}
 
 }

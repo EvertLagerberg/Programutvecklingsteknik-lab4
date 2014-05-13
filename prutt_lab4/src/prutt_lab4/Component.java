@@ -2,7 +2,9 @@ package prutt_lab4;
 
 import java.util.Iterator;
 
+
 abstract class Component implements Iterator<Component>  {
+
 
 	public String name;
 	public float weight;
