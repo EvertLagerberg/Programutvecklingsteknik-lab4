@@ -1,5 +1,7 @@
 package prutt_lab4;
 
+import java.util.Iterator;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -25,16 +27,28 @@ public class Test {
 	påse.add(schampoo);
 	
 	
-	System.out.println(resväska.toString());
+
+	
+	Iterator<Component>itr = resväska.itr;
+	System.out.println(itr.hasNext());
+	
+	/*while (itr.hasNext()) {
+		Component c = itr.next();
+		System.out.println(c);
+	}*/
+	
+	
+	/*System.out.println(resväska.toString());
 	
 	System.out.println("Total:" + resväska.getWeight());
 	
-	System.out.println("Påse:" + påse.getWeight());
+	System.out.println("Påse:" + påse.getWeight());*/
 	
-	 Human anna = Human.create("Anna", "xxxxxx-012x");
+	
+	 /*Human anna = Human.create("Anna", "xxxxxx-012x");
 	    Human magnus = Human.create("Magnus","xxxxxx-011x");
 	    System.out.println(anna);
-	    System.out.println(magnus);
+	    System.out.println(magnus);*/
 
 	}
 
